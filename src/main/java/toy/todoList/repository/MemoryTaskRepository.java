@@ -11,7 +11,7 @@ import java.util.Map;
 @Repository
 public class MemoryTaskRepository implements TaskRepository {
 
-    private Map<Long, Task> store = new HashMap<>();
+    private final Map<Long, Task> store = new HashMap<>();
     private Long sequence = 0L;
 
     @Override
